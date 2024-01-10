@@ -32,8 +32,8 @@ body {
     background-color: #1F2937;
     display: flex;
     padding: 40px;
-    gap: 18px;
-    justify-content: space-between;
+    gap: 28px;
+    justify-content: center;
 }
 
 .main h1 {
@@ -46,6 +46,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-basis: auto;
+    max-width: 50%;
 }
 
 .hero button {
@@ -60,17 +61,93 @@ body {
     width: 100px;
 }
 
-.hero img {
+.main img {
     flex-shrink: 0;
-    object-fit: cover;
-    flex-basis: auto;
+    min-width: 25%;
 }
 
 div {
     margin: 0;
 }
 
+.info {
+    text-align: center;
+    font-size: 36px;
+
+}
+
 .cards {
     display: flex;
-    
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    border: 5px solid #3882F6;
+    border-radius: 8px;
+}
+
+.card p {
+    max-width: 230px;
+    text-align: center;
+    color: #1F2937;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    font-size: 36px;
+    color: #1F2937;
+    padding: 24px 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote h3 {
+    font-weight: 300;
+}
+
+
+.quote h4{
+    margin: 1px 0px;
+    font-weight: 700;
+    font-size: 24px;
+    align-self: flex-end;
+}
+
+.cta-container {
+    padding: 60px 80px;
+}
+
+.cta {
+    background-color: #3882F6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px 20px;
+    border-radius: 8px;
+}
+
+.cta-text {
+    color: #F9FAF8
+}
+
+.cta button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    border: 2px solid white;
+    cursor: pointer;
+    width: auto;
 }
